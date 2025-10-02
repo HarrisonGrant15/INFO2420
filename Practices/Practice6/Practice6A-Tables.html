@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 8-9 Table with Colgroups</title>
+  <style>
+    td, th {
+      border: 1px solid gray;
+      padding: 6px;
+    }
+    /* Example styling by column */
+    col.fruit { background-color: #f9f9f9; }
+    col.item  { background-color: #fff; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Food Categories</caption>
+    <colgroup>
+      <col class="fruit">
+      <col class="item">
+    </colgroup>
+
+    <tr>
+      <th rowspan="3">Fruit</th>
+      <td>Apples</td>
+    </tr>
+    <tr>
+      <td>Bananas</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Oranges</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Vegetables</th>
+    </tr>
+    <tr>
+      <td>Carrots</td>
+    </tr>
+    <tr>
+      <td>Celery</td>
+    </tr>
+  </table>
+
+</body>
+</html>
