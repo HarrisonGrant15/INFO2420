@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Site Design Palette – Extreme Honeymoons</title>
+<style>
+  :root{
+    --primary:#739AF4;
+    --bg:#FFFFFF;
+    --text:#0F172A;
+    --heading:#1F3A8A;
+    --link:#2455C3;
+    --visited:#6B21A8;
+    --hover:#0B3EAC;
+    --muted:#334155;
+  }
+
+  html{box-sizing:border-box}
+  *,*::before,*::after{box-sizing:inherit}
+
+  body{
+    margin:0;
+    padding:2rem 1.5rem;
+    background:var(--bg);
+    color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans","Helvetica Neue",sans-serif;
+    font-size:100%;
+    line-height:1.6;
+  }
+
+  h1{ margin:0 0 1rem; color:var(--heading); font-size:1.75rem; }
+  p{ margin:.5rem 0 1rem; color:var(--muted); }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:1rem;
+    margin-bottom:2rem;
+  }
+  .swatch{
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+  }
+  .chip{
+    height:84px;
+  }
+  .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.6rem .75rem;
+  }
+  .label{ font-weight:700; color:var(--text); }
+  .mono{ font-family:ui-monospace, Menlo, Consolas, monospace; }
+</style>
+</head>
+<body>
+  <h1>Color Palette Export</h1>
+
+  <div class="grid">
+    <div class="swatch">
+      <div class="chip" style="background:#739AF4"></div>
+      <div class="row"><span class="label">Primary</span><span class="mono">#739AF4</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#FFFFFF; border-bottom:1px solid #e5e7eb"></div>
+      <div class="row"><span class="label">Background</span><span class="mono">#FFFFFF</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#0F172A"></div>
+      <div class="row"><span class="label">Body Text</span><span class="mono">#0F172A</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#1F3A8A"></div>
+      <div class="row"><span class="label">Headings</span><span class="mono">#1F3A8A</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#2455C3"></div>
+      <div class="row"><span class="label">Link (a:link)</span><span class="mono">#2455C3</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#6B21A8"></div>
+      <div class="row"><span class="label">Visited (a:visited)</span><span class="mono">#6B21A8</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#0B3EAC"></div>
+      <div class="row"><span class="label">Hover (a:hover)</span><span class="mono">#0B3EAC</span></div>
+    </div>
+
+    <div class="swatch">
+      <div class="chip" style="background:#334155"></div>
+      <div class="row"><span class="label">Muted (secondary text)</span><span class="mono">#334155</span></div>
+    </div>
+  </div>
+</body>
+</html>
